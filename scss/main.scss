@@ -1,7 +1,29 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 
-body {
+
+@mixin theme($theme: DarkGray) {
+  background: linear-gradient($theme,$theme, #243040 ,#293648,#324259, #3C4F6A);
+  background-size: cover;
   font: 100% $font-stack;
-  color: $primary-color
+  box-shadow: 0 0 1px rgba($theme, .25);
+  color: #fff;
+}
+
+body {
+  @include theme($theme: #1F2937);
+  width: 100vw;
+  height: 100vh;
+}
+
+navbar{
+  display: flex;
+  background-color: #00000000;
+  width: 100vw;
+  height: 5rem;
+}
+#show-me{
+  border-radius: 360px;
+  border: solid black 1px;
+  height: 40rem;
 }

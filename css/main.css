@@ -1,6 +1,24 @@
 body {
+  background: linear-gradient(#1F2937, #1F2937, #243040, #293648, #324259, #3C4F6A);
+  background-size: cover;
   font: 100% Helvetica, sans-serif;
-  color: #333;
+  box-shadow: 0 0 1px rgba(31, 41, 55, 0.25);
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
+navbar {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100vw;
+  height: 5rem;
+}
+
+#show-me {
+  border-radius: 360px;
+  border: solid black 1px;
+  height: 40rem;
 }
 
 /*# sourceMappingURL=main.css.map */
